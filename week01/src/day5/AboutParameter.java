@@ -3,7 +3,6 @@ package day5;
 public class AboutParameter {
     int a = 15;
     public int demo(){
-        a = 10;
         return a;
     }
 
