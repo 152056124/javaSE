@@ -7,9 +7,8 @@ package day4;
  */
 public class ParameterPassing {
 
-
     public static void main(String[] args) {
-        int a = 10;
+       int a = 10;
         System.out.println(demo(a)); //15
         System.out.println(a);       //10
     }
