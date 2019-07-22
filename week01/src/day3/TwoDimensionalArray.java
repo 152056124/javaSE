@@ -1,5 +1,7 @@
 package day3;
 
+import java.util.Arrays;
+
 /**
  *
  * 二维数组
@@ -12,7 +14,11 @@ public class TwoDimensionalArray {
         a[2] = new int[]{2,3};
         System.out.println(a[0][1]);
     }
+    static void demo01(){
+        int[][] a = new int[5][];
+        System.out.println(Arrays.toString(a));
+    }
     public static void main(String[] args) {
-        demo();
+        demo01();
     }
 }
