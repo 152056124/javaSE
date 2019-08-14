@@ -11,10 +11,10 @@ public class CourseDaoTest {
 //        int i = courseDao.deleteCourseByCno("C009");
 //        System.out.println(i);
 
-//        ArrayList<Course> courses = courseDao.selectCourseByCno("C001");
-//        for (Course cours : courses) {
-//            System.out.println(cours);
-//        }
+        ArrayList<Course> courses = courseDao.selectCourseByCno("C001");
+        for (Course cours : courses) {
+            System.out.println(cours);
+        }
 
 //        int i = courseDao.insertCourse("C009", "你好吗", 1, 1);
 //        System.out.println(i);
