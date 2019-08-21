@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.Scanner;
 
 public class Copy {
-    private static void cinScr(){
+    private static void cinScr() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("请输入你要复制的文件：");
         String s1 = scanner.nextLine();
@@ -13,7 +13,7 @@ public class Copy {
 
         //判断输入的文件是否为空，如果为空，创建一个新的文件。
         File file = new File(s2);
-        if (file.exists() == false ){
+        if (file.exists() == false) {
             try {
                 file.createNewFile();
             } catch (IOException e) {
@@ -25,13 +25,13 @@ public class Copy {
         InputStream in = null;
         OutputStream out = null;
         try {
-             in = new FileInputStream(s1);
-             out = new FileOutputStream(file,true);
-             byte[] cache = new byte[1024];
-             int count = 0;
-             while ((count = in.read(cache)) != -1){
-                 out.write(cache,0,count);
-             }
+            in = new FileInputStream(s1);
+            out = new FileOutputStream(file, true);
+            byte[] cache = new byte[1024];
+            int count = 0;
+            while ((count = in.read(cache)) != -1) {
+                out.write(cache, 0, count);
+            }
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -50,6 +50,7 @@ public class Copy {
             }
         }
     }
+
     public static void main(String[] args) {
         cinScr();
     }
